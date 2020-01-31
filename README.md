@@ -15,7 +15,8 @@ This action echo the message and print the environment and files in current dire
 Something for output
 
 ## Example usage
-
+```
 uses: actions/probe-echo-docker-action@v1
 with:
   message: 'Hello World!'
+```
