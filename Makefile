@@ -5,7 +5,7 @@ IMG="kaizheh/alpine-echo"
 
 build:
 	@echo "+ $@"
-	docker build -f container/Dockerfile -t ${IMG} .
+	docker build -f Dockerfile -t ${IMG} .
 push:
 	@echo "+ $@"
 	docker push ${IMG}
