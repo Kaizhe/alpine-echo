@@ -16,7 +16,8 @@ Something for output
 
 ## Example usage
 ```
-uses: actions/Kaizhe/alpine-echo@v1.0.0
-with:
-  message: 'Hello World!'
+- name: Alpine Probe & Echo
+  uses: Kaizhe/alpine-echo@v1.0.0
+  with:
+    message: 'Hello World!'
 ```
