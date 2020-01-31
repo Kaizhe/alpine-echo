@@ -1,0 +1,15 @@
+name: 'Alpine Probe & Echo'
+description: 'Probe Environment and Echo'
+inputs:
+  message:  # id of input
+    description: 'Echo Message'
+    required: true
+    default: 'Hello World'
+outputs:
+  action_fruit: # id of output
+    description: ''
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.message }}
